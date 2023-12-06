@@ -16,13 +16,3 @@ export const getUser = async (req, res) => {
     responseData(res, "Lỗi ...", exception.message, 500);
   }
 };
-
-// thông tin chi tiết của người dùng
-export const getUserDetail = async (req, res) => {
-  try {
-    
-
-  } catch (exception) {
-    responseData(res, "Lỗi ...", exception.message, 500);
-  }
-};
