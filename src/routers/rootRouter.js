@@ -3,6 +3,7 @@ import userRouter from "./userRouter.js";
 import homePageRouter from "./homePageRouter.js";
 import authRouter from "./authRouter.js";
 import detailRouter from "./detailRouter.js";
+import manageImgRouter from "./managerImgRouter.js";
 
 const rootRouter = express.Router();
 
@@ -17,5 +18,8 @@ rootRouter.use("/home", homePageRouter);
 
 // trang chi tiết
 rootRouter.use("/detail", detailRouter);
+
+// trang quản lý ảnh
+rootRouter.use("/manager", manageImgRouter);
 
 export default rootRouter;
