@@ -1,0 +1,7 @@
+File from: [D:\hoc backend\capstone-figma/public/imgs/avatar1701917564793_405469991_738740771454284_3926049784225885486_n.jpg]
+
+File to: [D:\hoc backend\capstone-figma/public/video/avatar1701917564793_405469991_738740771454284_3926049784225885486_n.jpg]
+
+Compression algorithm: [-]
+
+Description: File does not exist!
