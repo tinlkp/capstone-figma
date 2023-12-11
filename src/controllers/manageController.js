@@ -71,19 +71,20 @@ export const listImgSave = async (req, res) => {
 export const deleteImg = async (req, res) => {
   try {
     let { hinh_id } = req.params;
-    const findCommentImg = await model.binh_luan.findAll({
-      where: {
-        hinh_id,
-      },
-    });
-
-    // const findImg = await model.hinh_anh.findOne({
+    
+    // const findCommentImg = await model.binh_luan.findAll({
     //   where: {
     //     hinh_id,
     //   },
     // });
 
-    // await findImg.destroy();
+    const findImg = await model.hinh_anh.findOne({
+      where: {
+        hinh_id,
+      },
+    });
+
+    await findImg.destroy();
 
     responseData(res, "xóa thành công", findCommentImg, 200);
   } catch (exception) {
