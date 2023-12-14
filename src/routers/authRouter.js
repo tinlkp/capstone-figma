@@ -1,5 +1,10 @@
 import express from "express";
-import { login, signUp } from "../controllers/authController.js";
+import {
+  login,
+  logout,
+  signUp,
+  tokenRefresh,
+} from "../controllers/authController.js";
 
 const authRouter = express.Router();
 
@@ -8,5 +13,11 @@ authRouter.post("/login", login);
 
 // đăng ký
 authRouter.post("/signup", signUp);
+
+// checkToken
+authRouter.post("/token-ref", tokenRefresh);
+
+// logout
+authRouter.post("/logout", logout);
 
 export default authRouter;
